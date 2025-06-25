@@ -110,10 +110,22 @@
     <meta name="googlebot" content="index, follow">
     <meta name="author" content="İstanbul Acı Badem Boyacılık">
     <meta name="language" content="tr">
+   <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
 
-    <link rel="preload" as="script" href="https://www.googletagmanager.com/gtag/js?id=G-E4JBWT478X">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-E4JBWT478X"></script>
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      var script = document.createElement('script');
+      script.src = "https://www.googletagmanager.com/gtag/js?id=G-E4JBWT478X";
+      script.async = true;
+      document.head.appendChild(script);
 
+      gtag('js', new Date());
+      gtag('config', 'G-E4JBWT478X');
+    }, 3000); // sayfa yüklendikten 3 saniye sonra
+  });
+</script>
 
 <style>
   h1 {
